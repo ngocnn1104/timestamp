@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Timestamp Microservice</title>
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/main.css">
+  </head>
+  <body>
+    <h1>Timestamp Microservice</h1>
+
+    <p>User stories:</p>
+    <ol>
+      <li>I can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016).</li>
+      <li>If it does, it returns both the Unix timestamp and the natural language form of that date.</li>
+      <li>If it does not contain a date or Unix timestamp, it returns null for those properties.</li>
+    </ol>
+
+    <p>Example usage:</p>
+    <ul>
+      <li><code>https://[...].com/April%2011,%201993</code></li>
+      <li><code>https://[...].com/734475600</code></li>
+    </ul>
+
+    <p>Example output:</p>
+    <code>{"unix":734475600,"natural":"April 11, 1993"}</code>
+  </body>
+</html>
